@@ -14,8 +14,10 @@
         <div class="container">
             <div class="header-wrapper">
                 <div class="header__topbar">
-                    <img src="{{ asset('icons/logo-potapov-event.svg') }}" class="header__topbar-logo"
-                        alt="Логотип Александра Потапова">
+                    <a href="#">
+                        <img src="{{ asset('icons/logo-potapov-event.svg') }}" class="header__topbar-logo"
+                            alt="Логотип Александра Потапова">
+                    </a>
                     <div class="header__topbar-contact">
                         <div class="header__topbar-social">
                             <a href="#">
@@ -34,7 +36,7 @@
                 <div class="header__bottombar">
                     <h1>АЛЕКСАНДР ПОТАПОВ</h1>
                     <p>Ведущий и организатор праздничных мероприятий с опытом работы более 15 лет.</p>
-                    <a class="btn" href="#">Давайте знакомиться</a>
+                    <a class="header__bottombar-btn" href="#">Давайте знакомиться</a>
                 </div>
             </div>
         </div>
@@ -79,7 +81,7 @@
                                 <div>
                                     <img src="{{ asset('icons/skills-icon-charisma.svg') }}"
                                         alt="Иконка шкалы максимальной харизмы">
-                                    <strong>90%</strong>
+                                    <span>90%</span>
                                 </div>
                             </div>
                             <div class="skills__group-values">
@@ -87,7 +89,7 @@
                                 <div>
                                     <img src="{{ asset('icons/skills-icon-positive.svg') }}"
                                         alt="Иконка шкалы максимальной позитива">
-                                    <strong>91%</strong>
+                                    <span>91%</span>
                                 </div>
                             </div>
                         </div>
@@ -98,7 +100,7 @@
                                 <div>
                                     <img src="{{ asset('icons/skills-icon-exp.svg') }}"
                                         alt="Иконка шкалы максимального опыта">
-                                    <strong>89%</strong>
+                                    <span>89%</span>
                                 </div>
                             </div>
                             <div class="skills__group-values">
@@ -106,7 +108,7 @@
                                 <div>
                                     <img src="{{ asset('icons/skills-icon-romantic.svg') }}"
                                         alt="Иконка шкалы максимального романтика">
-                                    <strong>88%</strong>
+                                    <span>88%</span>
                                 </div>
                             </div>
                         </div>
@@ -117,7 +119,7 @@
                                 <div>
                                     <img src="{{ asset('icons/skills-icon-nadejnost.svg') }}"
                                         alt="Иконка шкалы максимальной надежности">
-                                    <strong>99%</strong>
+                                    <span>99%</span>
                                 </div>
                             </div>
                             <div class="skills__group-values">
@@ -125,7 +127,7 @@
                                 <div>
                                     <img src="{{ asset('icons/skills-icon-veselue.svg') }}"
                                         alt="Иконка шкалы максимального веселья">
-                                    <strong>92%</strong>
+                                    <span>92%</span>
                                 </div>
                             </div>
                         </div>
@@ -167,6 +169,15 @@
         </div>
     </section>
 
+    <section>
+        <swiper-container>
+            <swiper-slide>Slide 1</swiper-slide>
+            <swiper-slide>Slide 2</swiper-slide>
+            <swiper-slide>Slide 3</swiper-slide>
+            ...
+        </swiper-container>
+    </section>
+
     <section class="photograph">
         <div class="container">
             <h2 class="section-title">ФОТОАЛЬБОМ</h2>
@@ -202,10 +213,12 @@
     <footer class="footer">
         <div class="container">
             <div class="footer__info">
-                <img src="{{ asset('icons/logo-potapov-event.svg') }}" class="footer__info-logo"
-                    alt="Логотип Александра Потапова">
-                <div>АЛЕКСАНДР ПОТАПОВ</div>
-                <p>Тот самый ведущий...</p>
+                <a href="#">
+                    <img src="{{ asset('icons/logo-potapov-event.svg') }}" class="footer__info-logo"
+                        alt="Логотип Александра Потапова">
+                </a>
+                <p class="footer__info-master">АЛЕКСАНДР ПОТАПОВ</p>
+                <p class="footer__info-text">Тот самый ведущий...</p>
                 <div class="footer__info-social">
                     <a href="#">
                         <img src="{{ asset('icons/whatsapp-icon.svg') }}" alt="Иконка мессенджера WhatsApp">

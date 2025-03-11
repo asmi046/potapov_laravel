@@ -11,7 +11,7 @@
 @import "potapov";
 
 body{
-    font-family: $font_heading_deltaGothic;
+    font-family: $font_family_main;
     font-size: 16px;
     box-sizing: border-box;
 }
@@ -21,7 +21,12 @@ footer,
 section{
     width: 100%;
     padding: $section_space 10px;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
+}
+
+h1, h2, h3, h4 {
+    font-family: $font_family_sub;
+
 }
 
 h2 {
@@ -29,7 +34,6 @@ h2 {
 }
 
 .section-title {
-    font-weight: 600;
     margin-left: 65px;
     margin-bottom: 65px;
 }

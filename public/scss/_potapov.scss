@@ -1,25 +1,3 @@
-@font-face {
-    font-family: 'NunitoSans-Black';
-    src: url('/fonts/NunitoSans-Black.ttf') format('truetype');
-    font-weight: 900;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'NunitoSans-Regular';
-    src: url('/fonts/NunitoSans-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'DelaGothicOne-Regular';
-    src: url('/fonts/DelaGothicOne-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-}
-
-
 .header {
     background-image: url(../images/Main-background.webp);
     background-repeat: no-repeat;
@@ -64,7 +42,8 @@
 
         &-phone {
             display: inline-flex;
-            font-family: $font_nunito_black;
+            font-weight: 900;
+            font-family: $font_family_main;
             font-size: 1.5rem;
         }
     }
@@ -79,14 +58,15 @@
         }
 
         p {
-            font-family: $font_nunito_regular;
-            font-size: 1.5rem;
+            font-family: $font_family_main;
+            font-size: 1.625rem;
             width: 33%;
         }
 
-        a {
+        &-btn {
             padding: 12px 45px;
             max-width: 280px;
+            font-weight: 600;
             width: 100%;
             background-color: $main_color;
             border-radius: 5px;
@@ -138,22 +118,31 @@
             display: flex;
             flex-direction: column;
             gap: 25px;
+
+            p {
+                font-size: 1.125rem;
+                font-weight: 500;
+            }
         }
 
         &__skills {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
             .skills__group{
                 display: flex;
                 gap: 100px;
             &-values {
-
-                p {
-                    font-weight: 900;
-                }
+                font-family: $font_family_sub;
 
                 div {
                     display: flex;
                     align-items: center;
                     gap: 14px;
+
+                    span {
+                        font-size: 0.75rem;
+                    }
                 }
             }
             }
@@ -179,11 +168,13 @@
         width: 30%;
         &-title {
             font-size: 2.625rem;
-            font-weight: 600;
+            font-family: $font_family_sub;
+            margin-bottom: 13px;
         }
         &-text {
             font-size: 1.75rem;
-            font-family: $font_nunito_regular;
+            font-family: $font_family_main;
+            line-height: 30px;
         }
     }
 }
@@ -192,24 +183,21 @@
     &__gallery {
         display: grid;
         grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(3, 1fr);
         gap: 10px;
 
         &-photo {
-            &:nth-child(1),
-            &:nth-child(2),
-            &:nth-child(3)
-            &:nth-child(4) {
-
-            }
 
             &:nth-child(5),
             &:nth-child(6) {
-
+                grid-column: span 2;
+                grid-row: 2;
             }
 
             &:nth-child(7),
             &:nth-child(8) {
-
+                grid-column: span 2;
+                grid-row: 3;
             }
         }
     }
@@ -227,13 +215,15 @@
         gap: 26px;
         color: $white_color;
 
-        div {
+        &-master {
             font-size: 2rem;
-            font-weight: 600;
+            font-family: $font_family_sub;
+            line-height: 40px;
         }
 
-        p {
+        &-text {
             font-size: 1.75rem;
+            line-height: 30px;
         }
 
         &-logo {
