@@ -57,7 +57,7 @@
                 </div>
 
                 <div class="preview__block-card">
-                    <h2>Всем привет! Меня зовут<br> <span>Алексендр Потапов</span></h2>
+                    <h2>Всем привет! Меня зовут<br> <span>Александр Потапов</span></h2>
 
                     <div class="preview__block-card__text">
                         <p>
@@ -137,6 +137,160 @@
         </div>
     </section>
 
+    <section class="service">
+        <div class="container">
+            <h2 class="section-title">ОТЗЫВЫ <i class="section-title--icons"></i></h2>
+
+            <div class="service-start__preview">
+                <img src="{{ asset('icons/main-star-icon.svg') }}" alt="Иконка здвезды рейтинга">
+                <p>5.0 <span>45 отзывов</span></p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-card__item">
+                    <div class="service-card__item-human">
+                        <img src="{{ asset('/images/services-human.png') }}" alt="Аватарка отзыва">
+                        <div class="service-card__item-human--name">
+                            <span>Инна</span>
+                            <div class="item-human--stars">
+                                <i><img src="{{ asset('/icons/sub-star-icon.svg') }}" alt="Звёздочка рейтинга"></i>
+                                <i><img src="{{ asset('/icons/sub-star-icon.svg') }}" alt="Звёздочка рейтинга"></i>
+                                <i><img src="{{ asset('/icons/sub-star-icon.svg') }}" alt="Звёздочка рейтинга"></i>
+                                <i><img src="{{ asset('/icons/sub-star-icon.svg') }}" alt="Звёздочка рейтинга"></i>
+                                <i><img src="{{ asset('/icons/sub-star-icon.svg') }}" alt="Звёздочка рейтинга"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-card__item-text">
+                        <p>Большое спасибо! Самое главное, что он очень долго стоял и радовал своей красотой и нежным
+                            запахом. Скоро свадьба моей подруги, теперь я знаю, куда идти за красивым нежным букетиком.</p>
+                    </div>
+                    <div class="service-card__item-detail">
+                        <p><a href="#">Читать на Яндекс Услуги</a></p>
+                    </div>
+                </div>
+                <div class="service-card__item">
+                    <div class="service-card__item-human">
+                        <img src="{{ asset('/images/services-human.png') }}" alt="Аватарка отзыва">
+                        <div class="service-card__item-human--name">
+                            <span>Инна</span>
+                            <div class="item-human--stars">
+                                <i><img src="{{ asset('/icons/sub-star-icon.svg') }}" alt="Звёздочка рейтинга"></i>
+                                <i><img src="{{ asset('/icons/sub-star-icon.svg') }}" alt="Звёздочка рейтинга"></i>
+                                <i><img src="{{ asset('/icons/sub-star-icon.svg') }}" alt="Звёздочка рейтинга"></i>
+                                <i><img src="{{ asset('/icons/sub-star-icon.svg') }}" alt="Звёздочка рейтинга"></i>
+                                <i><img src="{{ asset('/icons/sub-star-icon.svg') }}" alt="Звёздочка рейтинга"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-card__item-text">
+                        <p>Большое спасибо! Самое главное, что он очень долго стоял и радовал своей красотой и нежным
+                            запахом. Скоро свадьба моей подруги, теперь я знаю, куда идти за красивым нежным букетиком.</p>
+                    </div>
+                    <div class="service-card__item-detail">
+                        <p><a href="#">Читать на Яндекс Услуги</a></p>
+                    </div>
+                </div>
+                <div class="service-card__item">
+                    <div class="service-card__item-human">
+                        <img src="{{ asset('/images/services-human.png') }}" alt="Аватарка отзыва">
+                        <div class="service-card__item-human--name">
+                            <span>Инна</span>
+                            <div class="item-human--stars">
+                                <i><img src="{{ asset('/icons/sub-star-icon.svg') }}" alt="Звёздочка рейтинга"></i>
+                                <i><img src="{{ asset('/icons/sub-star-icon.svg') }}" alt="Звёздочка рейтинга"></i>
+                                <i><img src="{{ asset('/icons/sub-star-icon.svg') }}" alt="Звёздочка рейтинга"></i>
+                                <i><img src="{{ asset('/icons/sub-star-icon.svg') }}" alt="Звёздочка рейтинга"></i>
+                                <i><img src="{{ asset('/icons/sub-star-icon.svg') }}" alt="Звёздочка рейтинга"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-card__item-text">
+                        <p>Большое спасибо! Самое главное, что он очень долго стоял и радовал своей красотой и нежным
+                            запахом. Скоро свадьба моей подруги, теперь я знаю, куда идти за красивым нежным букетиком.</p>
+                    </div>
+                    <div class="service-card__item-detail">
+                        <p><a href="#">Читать на Яндекс Услуги</a></p>
+                    </div>
+                </div>
+                <div class="service-card__item">
+                    <div class="service-card__item-human">
+                        <img src="{{ asset('/images/services-human.png') }}" alt="Аватарка отзыва">
+                        <div class="service-card__item-human--name">
+                            <span>Инна</span>
+                            <div class="item-human--stars">
+                                <i><img src="{{ asset('/icons/sub-star-icon.svg') }}" alt="Звёздочка рейтинга"></i>
+                                <i><img src="{{ asset('/icons/sub-star-icon.svg') }}" alt="Звёздочка рейтинга"></i>
+                                <i><img src="{{ asset('/icons/sub-star-icon.svg') }}" alt="Звёздочка рейтинга"></i>
+                                <i><img src="{{ asset('/icons/sub-star-icon.svg') }}" alt="Звёздочка рейтинга"></i>
+                                <i><img src="{{ asset('/icons/sub-star-icon.svg') }}" alt="Звёздочка рейтинга"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-card__item-text">
+                        <p>Большое спасибо! Самое главное, что он очень долго стоял и радовал своей красотой и нежным
+                            запахом. Скоро свадьба моей подруги, теперь я знаю, куда идти за красивым нежным букетиком.</p>
+                    </div>
+                    <div class="service-card__item-detail">
+                        <p><a href="#">Читать на Яндекс Услуги</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="video">
+        <div class="container">
+            <h2 class="section-title">ВИДЕО</h2>
+            <swiper-container slides-per-view="4" loop="true">
+                <swiper-slide>
+                    <div class="video-content">
+                        <img src="{{ asset('/images/video.png') }}" alt="">
+                        <div class="video-content__text">
+                            <p>- Змей искуситель!?</p>
+                            <p>- No!</p>
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="video-content">
+                        <img src="{{ asset('/images/video.png') }}" alt="">
+                        <div class="video-content__text">
+                            <p>Аля 90-е!</p>
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="video-content">
+                        <img src="{{ asset('/images/video.png') }}" alt="">
+                        <div class="video-content__text">
+                            <p>Новогоднее</p>
+                            <p>Приключение 2025</p>
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="video-content">
+                        <img src="{{ asset('/images/video.png') }}" alt="">
+                        <div class="video-content__text">
+                            <p>Дискотека</p>
+                            <p>Танцуют ВСЕ!</p>
+                        </div>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="video-content">
+                        <img src="{{ asset('/images/video.png') }}" alt="">
+                        <div class="video-content__text">
+                            <p>Шоу с дикими</p>
+                            <p>Животными</p>
+                        </div>
+                    </div>
+                </swiper-slide>
+            </swiper-container>
+        </div>
+    </section>
+
     <section class="price">
         <div class="container">
             <h2 class="section-title">ПРАЙС 2025</h2>
@@ -167,15 +321,6 @@
                 </div>
             </div>
         </div>
-    </section>
-
-    <section>
-        <swiper-container>
-            <swiper-slide>Slide 1</swiper-slide>
-            <swiper-slide>Slide 2</swiper-slide>
-            <swiper-slide>Slide 3</swiper-slide>
-            ...
-        </swiper-container>
     </section>
 
     <section class="photograph">
