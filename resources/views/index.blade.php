@@ -133,13 +133,17 @@
                         </div>
                     </div>
                 </div>
+                <div class="preview__block-additionally">
+                    <img src="{{ asset('/images/profile-with-didjey.webp') }}"
+                        alt="Фото-карточка Александра Потапова с диджеем">
+                </div>
             </div>
         </div>
     </section>
 
     <section class="service">
         <div class="container">
-            <h2 class="section-title">ОТЗЫВЫ <i class="section-title--icons"></i></h2>
+            <h2 class="section-title comments">ОТЗЫВЫ <i class="section-title--icons"></i></h2>
 
             <div class="service-start__preview">
                 <img src="{{ asset('icons/main-star-icon.svg') }}" alt="Иконка здвезды рейтинга">
@@ -242,7 +246,7 @@
     <section class="video">
         <div class="container">
             <h2 class="section-title">ВИДЕО</h2>
-            <swiper-container slides-per-view="4" loop="true">
+            <swiper-container slides-per-view="4" loop="true" space-between="48">
                 <swiper-slide>
                     <div class="video-content">
                         <img src="{{ asset('/images/video.png') }}" alt="">
@@ -328,28 +332,28 @@
             <h2 class="section-title">ФОТОАЛЬБОМ</h2>
             <div class="photograph__gallery">
                 <div class="photograph__gallery-photo">
-                    <img src="{{ asset('images/photo1.png') }}" alt="">
+                    <img src="{{ asset('images/photo1.webp') }}" alt="Фотографии работы ведущего Александра Потапова">
                 </div>
                 <div class="photograph__gallery-photo">
-                    <img src="{{ asset('images/photo2.png') }}" alt="">
+                    <img src="{{ asset('images/photo2.webp') }}" alt="Фотографии работы ведущего Александра Потапова">
                 </div>
                 <div class="photograph__gallery-photo">
-                    <img src="{{ asset('images/photo3.png') }}" alt="">
+                    <img src="{{ asset('images/photo3.png') }}" alt="Фотографии работы ведущего Александра Потапова">
                 </div>
                 <div class="photograph__gallery-photo">
-                    <img src="{{ asset('images/photo4.png') }}" alt="">
+                    <img src="{{ asset('images/photo4.webp') }}" alt="Фотографии работы ведущего Александра Потапова">
                 </div>
                 <div class="photograph__gallery-photo">
-                    <img src="{{ asset('images/photo5.png') }}" alt="">
+                    <img src="{{ asset('images/photo5.webp') }}" alt="Фотографии работы ведущего Александра Потапова">
                 </div>
                 <div class="photograph__gallery-photo">
-                    <img src="{{ asset('images/photo6.png') }}" alt="">
+                    <img src="{{ asset('images/photo6.png') }}" alt="Фотографии работы ведущего Александра Потапова">
                 </div>
                 <div class="photograph__gallery-photo">
-                    <img src="{{ asset('images/photo7.png') }}" alt="">
+                    <img src="{{ asset('images/photo7.png') }}" alt="Фотографии работы ведущего Александра Потапова">
                 </div>
                 <div class="photograph__gallery-photo">
-                    <img src="{{ asset('images/photo8.png') }}" alt="">
+                    <img src="{{ asset('images/photo8.webp') }}" alt="Фотографии работы ведущего Александра Потапова">
                 </div>
             </div>
         </div>
