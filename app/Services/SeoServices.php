@@ -17,7 +17,7 @@ class SeoServices {
     public function __toString() {
 
         $seo_title = $this->seo_data?$this->seo_data->seo_title:config('asmiseo.default_seo_title');
-        $seo_title .= config('asmiseo.concat_title_postfix')?" - ".config('asmiseo.title_postfix'):"";
+        // $seo_title .= config('asmiseo.concat_title_postfix')?" - ".config('asmiseo.title_postfix'):"";
         $seo_description = $this->seo_data?$this->seo_data->seo_description:config('asmiseo.default_seo_description');
 
         $result = "<title>".$seo_title."</title>"."\n\r";
