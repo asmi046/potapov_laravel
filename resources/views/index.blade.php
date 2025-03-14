@@ -36,7 +36,7 @@
                 <div class="header__bottombar">
                     <h1>АЛЕКСАНДР ПОТАПОВ</h1>
                     <p>Ведущий и организатор праздничных мероприятий с опытом работы более 15 лет.</p>
-                    <a class="header__bottombar-btn" href="#">Давайте знакомиться</a>
+                    <a class="header__bottombar-btn yakor" href="#preview">Давайте знакомиться</a>
                 </div>
 
                 <div class="header__companies">
@@ -51,7 +51,7 @@
             </div>
         </div>
     </header>
-    <section class="preview">
+    <section id="preview" class="preview">
         <div class="container">
             <div class="preview-wrapper">
                 <div class="preview__block-img">
