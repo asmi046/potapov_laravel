@@ -38,6 +38,16 @@
                     <p>Ведущий и организатор праздничных мероприятий с опытом работы более 15 лет.</p>
                     <a class="header__bottombar-btn" href="#">Давайте знакомиться</a>
                 </div>
+
+                <div class="header__companies">
+                    <img class="companies__russia-one" src="{{ asset('/icons/Russia1-icon.svg') }}"
+                        alt="Иконка телеканала Россия 1">
+                    <img class="companies__sberbank" src="{{ asset('/icons/Sber-icon.svg') }}" alt="Иконка Сбербанка">
+                    <img class="companies__sibur" src="{{ asset('/icons/Sibur-icon.svg') }}" alt="Иконка Сибур">
+                    <img class="companies__ildebote" src="{{ asset('/icons/Ille-de-Beaute-icon.svg') }}"
+                        alt="Иконка Иль де Ботэ">
+                    <img class="companies__lukoil" src="{{ asset('/icons/Lukoil-icon.svg') }}" alt="Иконка Лукойл">
+                </div>
             </div>
         </div>
     </header>

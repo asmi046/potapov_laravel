@@ -12,7 +12,7 @@
     &-wrapper {
         display: flex;
         flex-direction: column;
-        gap: 308px;
+        justify-content: space-between;
         height: 1267px;
 
         @media (max-width: 1240px) {
@@ -84,6 +84,7 @@
         }
     }
 
+
     &__bottombar {
         display: flex;
         flex-direction: column;
@@ -117,6 +118,7 @@
             }
         }
 
+
         @media (max-width: 1480px) {
             h1 {
                 font-size: 2rem;
@@ -147,6 +149,27 @@
                 width: 70%;
             }
         }
+
+
+    }
+
+    &__companies{
+     display: flex;
+     align-items: center;
+     justify-content: space-evenly;
+     gap: 10px;
+        @media (max-width: 768px) {
+            display: none;
+        }
+        img {
+            max-width: 150px;
+            height: 35px;
+
+        &:last-child {
+            max-width: 40px;
+        }
+        }
+
     }
 
 }
@@ -384,7 +407,7 @@
         }
 
         p {
-            font-family: $font_services_stars;
+            font-family: $font_family_sub;
             font-size: 24px;
             font-weight: 700;
         }
@@ -407,7 +430,7 @@
             flex-direction: column;
             gap: 10px;
             padding: 20px 13px 20px 18px;
-            font-family: $font_services_text;
+            font-family: $font_family_main;
             box-shadow: 0px 1px 4px 0px #00000040;
             border-radius: $border_rad;
 
