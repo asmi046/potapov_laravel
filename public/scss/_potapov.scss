@@ -5,6 +5,9 @@
     background-position-x: 100%;
     color: $white_color;
     margin-bottom: 80px;
+
+
+
     @media (max-width: 1240px) {
         background-position-x: 60%;
     }
@@ -13,11 +16,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 1267px;
-
-        @media (max-width: 1240px) {
-            height: 926px;
-        }
+        height: calc(100vh - 46px);
 
         @media (max-width: 998px){
             justify-content: space-between;
@@ -90,6 +89,7 @@
         flex-direction: column;
         gap: $content_space;
 
+        margin: auto 0;
 
 
 
@@ -100,7 +100,8 @@
         p {
             font-family: $font_family_main;
             font-size: 1.625rem;
-            width: 33%;
+            width: 44%;
+            line-height: 1.3;
         }
 
         &-btn {
@@ -145,8 +146,14 @@
         }
 
         @media (max-width: 640px){
+            margin: auto 0 0 0;
+            h1 {
+                width:90%;
+            }
             p {
-                width: 70%;
+                width: 90%;
+                line-height: 1.2;
+                font-size: 1.0rem;
             }
         }
 
@@ -172,6 +179,9 @@
 
     }
 
+    @media (max-width: 640px) {
+        margin-bottom: 40px;
+    }
 }
 
 

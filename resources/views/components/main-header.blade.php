@@ -24,16 +24,19 @@
         </div>
         <div class="header__bottombar">
             <h1>АЛЕКСАНДР ПОТАПОВ</h1>
-            <p>Ведущий и организатор праздничных мероприятий с опытом работы более 15 лет.</p>
+            <p>Выпускник школы «Первого канала». Экс-ведущий и репортёр «Вестей». Работал на одной сцене с такими звёздами, как: L’One, группа “Каста”, Бурито, Тина Кузнецова, “Ottawan”, ”Волга-Волга”, Ильёй Соболевым, Иваном Абрамовым, Нурланом Сабуровым и тд.</p>
             <a class="header__bottombar-btn yakor" href="#preview">Давайте знакомиться</a>
         </div>
 
-        <div class="header__companies">
+        {{-- <div class="header__companies">
             <img src="{{ asset('/icons/Russia1-icon.svg') }}" alt="Иконка телеканала Россия 1">
             <img src="{{ asset('/icons/Sber-icon.svg') }}" alt="Иконка Сбербанка">
             <img src="{{ asset('/icons/Sibur-icon.svg') }}" alt="Иконка Сибур">
             <img src="{{ asset('/icons/Ille-de-Beaute-icon.svg') }}" alt="Иконка Иль де Ботэ">
             <img src="{{ asset('/icons/Lukoil-icon.svg') }}" alt="Иконка Лукойл">
-        </div>
+        </div> --}}
+
+
+
     </div>
 </div>
