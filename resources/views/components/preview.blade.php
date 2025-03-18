@@ -8,10 +8,10 @@
 
 
                         <div class="preview__block-img__social">
-                            <a href="#">
+                            <a href="{{ config('lend_data.header.ws_lnk') }}">
                                 <img src="{{ asset('icons/whatsapp-with-photo.svg') }}" alt="Иконка мессенджера WhatsApp">
                             </a>
-                            <a href="#">
+                            <a href="{{ config('lend_data.header.tg_lnk') }}">
                                 <img src="{{ asset('icons/tg-with-photo.svg') }}" alt="Иконка мессенджера Telegram">
                             </a>
                         </div>
