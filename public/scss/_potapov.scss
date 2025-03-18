@@ -336,6 +336,9 @@
                     }
                 }
             }
+                @media (max-width: 640px) {
+                    gap: 30px;
+                }
             }
         }
     }
@@ -399,6 +402,9 @@
     .comments{
         display: flex;
         align-items: center;
+        a {
+            color:black
+        }
     }
 
     &-start__preview{
@@ -534,8 +540,11 @@
 
         @media (max-width: 480px) {
             flex-direction: column;
+            background-image: url(../images/price_bg.webp);
+            background-size: cover;
         }
     }
+
 
 
 

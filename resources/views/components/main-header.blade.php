@@ -3,23 +3,23 @@
 <div class="container">
     <div class="header-wrapper">
         <div class="header__topbar">
-            <a href="#">
+            <a href="{{ route('home') }}">
                 <img src="{{ asset('icons/logo-potapov-event.svg') }}" class="header__topbar-logo"
                     alt="Логотип Александра Потапова">
             </a>
             <div class="header__topbar-contact">
                 <div class="header__topbar-social">
-                    <a href="#">
+                    <a href="{{ config('lend_data.header.ws_lnk') }}">
                         <img src="{{ asset('icons/whatsapp-icon.svg') }}" alt="Иконка мессенджера WhatsApp">
                     </a>
-                    <a href="#">
+                    <a href="{{ config('lend_data.header.tg_lnk') }}">
                         <img src="{{ asset('icons/tg-icon.svg') }}" alt="Иконка мессенджера Telegram">
                     </a>
-                    <a href="#">
+                    <a href="{{ config('lend_data.header.vk_lnk') }}">
                         <img src="{{ asset('icons/vk-icon.svg') }}" alt="Иконка социальной сети Вконтакте">
                     </a>
                 </div>
-                <a class="header__topbar-phone" href="tel:89207053348">+7 920-705-33-48</a>
+                <a class="header__topbar-phone" href="tel:+7{{ phone_format(config('lend_data.header.phone')) }}">{{ config('lend_data.header.phone') }}</a>
             </div>
         </div>
         <div class="header__bottombar">
