@@ -202,8 +202,12 @@
         }
     }
 
+    .palaroid_section {
+        width: 35%;
+    }
+
     &__block-img {
-        width: 25%;
+        width: 530px;
         z-index: -1;
         display: flex;
         flex-direction: column;
@@ -212,7 +216,9 @@
         box-shadow: 0px 0px 14px 0px #00000040;
         transform: rotate(353deg) translateZ(0);
 
-
+        .pict_wrapper {
+            height: 450px;
+        }
 
         @media (max-width: 1480px) {
             max-width: 250px;
@@ -251,7 +257,7 @@
     }
 
     &__block-card {
-        width: 50%;
+        flex:1;
         display: flex;
         flex-direction: column;
         gap: 20px;

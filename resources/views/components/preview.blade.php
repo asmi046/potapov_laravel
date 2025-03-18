@@ -1,18 +1,23 @@
         <div class="container">
             <div class="preview-wrapper">
-                <div class="preview__block-img">
-                    <a data-fslightbox="page-galery" href="{{ asset('images/profile-photo.webp') }}">
-                        <img   src="{{ asset('images/profile-photo.webp') }}" alt="Фото-карточка Александра Потапова">
-                    </a>
-                    <div class="preview__block-img__social">
-                        <a href="#">
-                            <img src="{{ asset('icons/whatsapp-with-photo.svg') }}" alt="Иконка мессенджера WhatsApp">
-                        </a>
-                        <a href="#">
-                            <img src="{{ asset('icons/tg-with-photo.svg') }}" alt="Иконка мессенджера Telegram">
-                        </a>
+                <div class="palaroid_section">
+                    <div class="preview__block-img">
+                        <div class="pict_wrapper">
+                            <img   src="{{ asset('images/profile-photo.webp') }}" alt="Фото-карточка Александра Потапова">
+                        </div>
+
+
+                        <div class="preview__block-img__social">
+                            <a href="#">
+                                <img src="{{ asset('icons/whatsapp-with-photo.svg') }}" alt="Иконка мессенджера WhatsApp">
+                            </a>
+                            <a href="#">
+                                <img src="{{ asset('icons/tg-with-photo.svg') }}" alt="Иконка мессенджера Telegram">
+                            </a>
+                        </div>
                     </div>
                 </div>
+
 
                 <div class="preview__block-card">
                     <h2>Всем привет! Меня зовут<br> <span>Александр Потапов</span></h2>
