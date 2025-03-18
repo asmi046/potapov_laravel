@@ -24,49 +24,77 @@
 
     <section class="video">
         <div class="container">
-            <h2 class="section-title">ВИДЕО</h2>
-            <swiper-container slides-per-view="4" loop="true" space-between="48">
+            <h2 class="section-title">VIDEO</h2>
+            <swiper-container>
                 <swiper-slide>
-                    <div class="video-content">
-                        <img src="{{ asset('/images/video.png') }}" alt="">
+                    <a data-fslightbox="page-galery" data-autoplay href="{{ asset('video/animal-show-vertical.mp4') }}"
+                        class="video-content">
+                        <video style="display: none" src="{{ asset('video/animal-show-vertical.mp4') }}"
+                            poster="{{ asset('/images/video.png') }}"></video>
+                        <img src="{{ asset('/images/animal-show-prev.webp') }}" alt="Превью-фото шоу с дикими животными">
+                        <div class="play-icon">
+                            <img src="{{ asset('/icons/play-video.svg') }}" alt="Иконка старта видео">
+                        </div>
                         <div class="video-content__text">
                             <p>- Змей искуситель!?</p>
                             <p>- No!</p>
                         </div>
-                    </div>
+                    </a>
                 </swiper-slide>
                 <swiper-slide>
-                    <div class="video-content">
-                        <img src="{{ asset('/images/video.png') }}" alt="">
+                    <a data-fslightbox="page-galery" data-autoplay href="{{ asset('video/reels-league.mp4') }}"
+                        class="video-content">
+                        <video style="display: none" src="{{ asset('video/reels-league.mp4') }}"
+                            poster="{{ asset('/images/90e-prev.webp') }}"></video>
+                        <img src="{{ asset('/images/90e-prev.webp') }}" alt="Превью фото Аля 90-е">
+                        <div class="play-icon">
+                            <img src="{{ asset('/icons/play-video.svg') }}" alt="Иконка старта видео">
+                        </div>
                         <div class="video-content__text">
                             <p>Аля 90-е!</p>
                         </div>
-                    </div>
+                    </a>
                 </swiper-slide>
                 <swiper-slide>
-                    <div class="video-content">
-                        <img src="{{ asset('/images/video.png') }}" alt="">
+                    <a data-fslightbox="page-galery" data-autoplay href="{{ asset('video/norder-potapov-reels.mp4') }}"
+                        class="video-content">
+                        <video style="display: none" src="{{ asset('video/norder-potapov-reels.mp4') }}"
+                            poster="{{ asset('/images/happy-new-year-prev.webp') }}"></video>
+                        <img src="{{ asset('/images/happy-new-year-prev.webp') }}"
+                            alt="Превью фото к видео Новогоднее приключение">
+                        <div class="play-icon">
+                            <img src="{{ asset('/icons/play-video.svg') }}" alt="Иконка старта видео">
+                        </div>
                         <div class="video-content__text">
                             <p>Новогоднее</p>
                             <p>Приключение 2025</p>
                         </div>
-                    </div>
+                    </a>
                 </swiper-slide>
                 <swiper-slide>
-                    <div class="video-content">
-                        <img src="{{ asset('/images/video.png') }}" alt="">
+                    <a data-fslightbox="page-galery" data-autoplay href="{{ asset('video/reels-nzc-pot-clip1.mp4') }}"
+                        class="video-content">
+                        <video style="display: none" src="{{ asset('video/reels-nzc-pot-clip1.mp4') }}"
+                            poster="{{ asset('/images/disco-prev.webp') }}"></video>
+                        <img src="{{ asset('/images/disco-prev.webp') }}" alt="Фото превю видео Дискотека танцуют все">
+                        <div class="play-icon">
+                            <img src="{{ asset('/icons/play-video.svg') }}" alt="Иконка старта видео">
+                        </div>
                         <div class="video-content__text">
                             <p>Дискотека</p>
                             <p>Танцуют ВСЕ!</p>
                         </div>
-                    </div>
+                    </a>
                 </swiper-slide>
                 <swiper-slide>
-                    <a data-fslightbox="page-galery" data-autoplay href="{{ asset('video/liga.mp4') }}" class="video-content">
-
-                            <video style="display: none" src="{{ asset('video/liga.mp4') }}" poster="{{ asset('/images/video.png') }}"></video>
-
+                    <a data-fslightbox="page-galery" data-autoplay href="{{ asset('video/animal-show-vertical.mp4') }}"
+                        class="video-content">
+                        <video style="display: none" src="{{ asset('/video/animal-show-vertical.mp4') }}"
+                            poster="{{ asset('/images/video.png') }}"></video>
                         <img src="{{ asset('/images/video.png') }}" alt="">
+                        <div class="play-icon">
+                            <img src="{{ asset('/icons/play-video.svg') }}" alt="Иконка старта видео">
+                        </div>
                         <div class="video-content__text">
                             <p>Шоу с дикими</p>
                             <p>Животными</p>
