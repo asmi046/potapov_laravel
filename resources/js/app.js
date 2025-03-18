@@ -22,24 +22,28 @@ for (let anchor of anchors) {
 }
 
 
-  const swiperEl = document.querySelector('swiper-container');
+  const swiperEl = document.getElementById('video_swiper');
 
   // swiper parameters
   const swiperParams = {
-    slidesPerView: 4,
+    slidesPerView: 1.5,
     spaceBetween: 48,
     loop: true,
     breakpoints: {
 
-      320: {
-        slidesPerView: 1,
-       },
+      310: {
+        slidesPerView: 1.5,
+        spaceBetween: 18,
+        },
       640: {
-        slidesPerView: 3,
+        slidesPerView: 2.5,
         spaceBetween: 28,
       },
+      820: {
+        slidesPerView: 3.5,
+      },
       1024: {
-        slidesPerView: 4,
+        slidesPerView: 4.5,
       },
     },
   };

@@ -24,8 +24,8 @@
 
     <section class="video">
         <div class="container">
-            <h2 class="section-title">VIDEO</h2>
-            <swiper-container>
+            <h2 class="section-title">ВИДЕО</h2>
+            <swiper-container id="video_swiper">
                 <swiper-slide>
                     <a data-fslightbox="page-galery" data-autoplay href="{{ asset('video/animal-show-vertical.mp4') }}"
                         class="video-content">
@@ -101,6 +101,56 @@
                         </div>
                     </a>
                 </swiper-slide>
+
+                <swiper-slide>
+                    <a data-fslightbox="page-galery" data-autoplay href="{{ asset('video/norder-potapov-reels.mp4') }}"
+                        class="video-content">
+                        <video style="display: none" src="{{ asset('video/norder-potapov-reels.mp4') }}"
+                            poster="{{ asset('/images/happy-new-year-prev.webp') }}"></video>
+                        <img src="{{ asset('/images/happy-new-year-prev.webp') }}"
+                            alt="Превью фото к видео Новогоднее приключение">
+                        <div class="play-icon">
+                            <img src="{{ asset('/icons/play-video.svg') }}" alt="Иконка старта видео">
+                        </div>
+                        <div class="video-content__text">
+                            <p>Новогоднее</p>
+                            <p>Приключение 2025</p>
+                        </div>
+                    </a>
+                </swiper-slide>
+
+                <swiper-slide>
+                    <a data-fslightbox="page-galery" data-autoplay href="{{ asset('video/animal-show-vertical.mp4') }}"
+                        class="video-content">
+                        <video style="display: none" src="{{ asset('video/animal-show-vertical.mp4') }}"
+                            poster="{{ asset('/images/video.png') }}"></video>
+                        <img src="{{ asset('/images/animal-show-prev.webp') }}" alt="Превью-фото шоу с дикими животными">
+                        <div class="play-icon">
+                            <img src="{{ asset('/icons/play-video.svg') }}" alt="Иконка старта видео">
+                        </div>
+                        <div class="video-content__text">
+                            <p>- Змей искуситель!?</p>
+                            <p>- No!</p>
+                        </div>
+                    </a>
+                </swiper-slide>
+
+                <swiper-slide>
+                    <a data-fslightbox="page-galery" data-autoplay href="{{ asset('video/animal-show-vertical.mp4') }}"
+                        class="video-content">
+                        <video style="display: none" src="{{ asset('/video/animal-show-vertical.mp4') }}"
+                            poster="{{ asset('/images/video.png') }}"></video>
+                        <img src="{{ asset('/images/video.png') }}" alt="">
+                        <div class="play-icon">
+                            <img src="{{ asset('/icons/play-video.svg') }}" alt="Иконка старта видео">
+                        </div>
+                        <div class="video-content__text">
+                            <p>Шоу с дикими</p>
+                            <p>Животными</p>
+                        </div>
+                    </a>
+                </swiper-slide>
+
             </swiper-container>
         </div>
     </section>

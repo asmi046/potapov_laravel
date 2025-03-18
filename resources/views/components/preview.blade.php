@@ -3,16 +3,24 @@
                 <div class="palaroid_section">
                     <div class="preview__block-img">
                         <div class="pict_wrapper">
-                            <img   src="{{ asset('images/profile-photo.webp') }}" alt="Фото-карточка Александра Потапова">
+                            <swiper-container slides-per-view="1" loop="true" autoplay="true" delay="2500">
+                                <swiper-slide>
+                                    <img src="{{ asset('images/profile-photo.webp') }}" alt="Фото-карточка Александра Потапова">
+                                </swiper-slide>
+
+                                <swiper-slide>
+                                    <img src="{{ asset('images/profile-with-didjey.webp') }}" alt="Фото-карточка Александра Потапова">
+                                </swiper-slide>
+                            </swiper-container>
                         </div>
 
 
                         <div class="preview__block-img__social">
                             <a href="{{ config('lend_data.header.ws_lnk') }}">
-                                <img src="{{ asset('icons/whatsapp-with-photo.svg') }}" alt="Иконка мессенджера WhatsApp">
+                                <img src="{{ asset('icons/whatsapp-with-photo.svg') }}" alt="Написать в WhatsApp">
                             </a>
                             <a href="{{ config('lend_data.header.tg_lnk') }}">
-                                <img src="{{ asset('icons/tg-with-photo.svg') }}" alt="Иконка мессенджера Telegram">
+                                <img src="{{ asset('icons/tg-with-photo.svg') }}" alt="Написать в Telegram">
                             </a>
                         </div>
                     </div>
@@ -24,16 +32,10 @@
 
                     <div class="preview__block-card__text">
                         <p>
-                            И я - профессиональный ведущий с 15 - летним опытом в организации и проведении мероприятий!
-                            ️Мой
-                            стиль — современная классика! Избегаю банальных конкурсов и пошлых шуток. Только
-                            индивидуальный
-                            подход и персонализированная программа.
+                            И я - профессиональный ведущий с 15 - летним опытом в организации и проведении мероприятий! Мой стиль — современная классика! Избегаю банальных конкурсов и пошлых шуток. Только индивидуальный подход и персонализированная программа.
                         </p>
                         <p>
-                            Работаю в тандеме с опытным диджеем, чтобы обеспечить качественное музыкальное
-                            сопровождение.
-                            Использую современные диджитал-игры и интерактивные конкурсы с кнопками для викторин.
+                            Работаю в тандеме с опытным диджеем, чтобы обеспечить качественное музыкальное сопровождение. Использую современные диджитал-игры и интерактивные конкурсы с кнопками для викторин.
                         </p>
                         <p>
                             Давайте сделаем из вашего события не просто рядовое торжество, а яркое и запоминающееся шоу!
@@ -99,9 +101,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="preview__block-additionally">
+                {{-- <div class="preview__block-additionally">
                     <img src="{{ asset('/images/profile-with-didjey.webp') }}"
                         alt="Фото-карточка Александра Потапова с диджеем">
-                </div>
+                </div> --}}
             </div>
         </div>
