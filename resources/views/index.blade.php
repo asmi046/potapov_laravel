@@ -62,13 +62,16 @@
                     </div>
                 </swiper-slide>
                 <swiper-slide>
-                    <div class="video-content">
+                    <a data-fslightbox="page-galery" data-autoplay href="{{ asset('video/liga.mp4') }}" class="video-content">
+
+                            <video style="display: none" src="{{ asset('video/liga.mp4') }}" poster="{{ asset('/images/video.png') }}"></video>
+
                         <img src="{{ asset('/images/video.png') }}" alt="">
                         <div class="video-content__text">
                             <p>Шоу с дикими</p>
                             <p>Животными</p>
                         </div>
-                    </div>
+                    </a>
                 </swiper-slide>
             </swiper-container>
         </div>

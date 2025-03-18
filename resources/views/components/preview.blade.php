@@ -1,7 +1,9 @@
         <div class="container">
             <div class="preview-wrapper">
                 <div class="preview__block-img">
-                    <img src="{{ asset('images/profile-photo.webp') }}" alt="Фото-карточка Александра Потапова">
+                    <a data-fslightbox="page-galery" href="{{ asset('images/profile-photo.webp') }}">
+                        <img   src="{{ asset('images/profile-photo.webp') }}" alt="Фото-карточка Александра Потапова">
+                    </a>
                     <div class="preview__block-img__social">
                         <a href="#">
                             <img src="{{ asset('icons/whatsapp-with-photo.svg') }}" alt="Иконка мессенджера WhatsApp">

@@ -45,6 +45,7 @@
     },
     "dependencies": {
         "@vitejs/plugin-vue": "^5.2.1",
+        "fslightbox": "^3.5.1",
         "swiper": "^11.2.5"
     }
 }

@@ -2,6 +2,7 @@ import './bootstrap';
 import { register } from 'swiper/element/bundle';
 register();
 
+import fslightbox from 'fslightbox'
 
 const anchors = document.querySelectorAll('a[href*="#"].yakor')
 
@@ -10,11 +11,11 @@ for (let anchor of anchors) {
     e.preventDefault()
 
     // main_side_menue.classList.remove('active');
+
     const blockID = anchor.getAttribute('href').substr(1)
     console.log(blockID)
     document.getElementById(blockID).scrollIntoView({
-      behavior: 'smooth',
-      block: 'start'
+        behavior: 'smooth',
     })
   })
 }

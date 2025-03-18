@@ -10,6 +10,10 @@
 @import "elements/all-elements";
 @import "potapov";
 
+html {
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: $font_family_main;
     font-size: 16px;

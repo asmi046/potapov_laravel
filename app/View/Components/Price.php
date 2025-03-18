@@ -8,12 +8,13 @@ use Illuminate\View\Component;
 
 class Price extends Component
 {
+
+    // public array $item;
     /**
      * Create a new component instance.
      */
     public function __construct()
     {
-        //
     }
 
     /**
