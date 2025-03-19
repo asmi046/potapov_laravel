@@ -161,6 +161,9 @@
             }
         }
 
+        @media (max-width: 480px) {
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+        }
 
     }
 
