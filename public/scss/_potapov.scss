@@ -39,11 +39,10 @@
 
             @media (max-width: 1240px) {
                 max-width: 250px;
-                height: 48px;
+                height: auto;
             }
             @media (max-width:480px) {
                 max-width: 200px;
-                height: 35px;
             }
         }
 
