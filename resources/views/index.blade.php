@@ -163,6 +163,13 @@
         <x-photograph></x-photograph>
     </section>
 
+    <section class="promo">
+        <div class="container">
+            <h2 class="section-title">PROMO 2025</h2>
+            <video style="border-radius: 20px;" autoplay muted controls src="{{ asset('/video/promo_2023.mp4') }}"  ></video>
+        </div>
+    </section>
+
     <footer class="footer">
         <x-footer></x-footer>
     </footer>
