@@ -1,11 +1,14 @@
         <div class="container">
             <div class="footer__info">
                 <a href="{{ route('home') }}">
-                    <img src="{{ asset('icons/logo-potapov-event.svg') }}" class="footer__info-logo"
+                    <img src="{{ asset('icons/footer-stars.svg') }}" class="footer__info-logo"
                         alt="Логотип Александра Потапова">
                 </a>
                 <p class="footer__info-master">АЛЕКСАНДР ПОТАПОВ</p>
                 <p class="footer__info-text">Тот самый ведущий...</p>
+                <p class="footer__info-phone"><a
+                        href="tel:+7{{ phone_format(config('lend_data.header.phone')) }}">{{ config('lend_data.header.phone') }}</a>
+                </p>
                 <div class="footer__info-social">
                     <a href="{{ config('lend_data.header.ws_lnk') }}">
                         <img src="{{ asset('icons/whatsapp-icon.svg') }}" alt="Иконка мессенджера WhatsApp">

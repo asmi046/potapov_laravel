@@ -312,24 +312,53 @@
         }
 
         &__text {
-            display: flex;
-            flex-direction: column;
-            gap: 25px;
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 25px;
 
-            @media (max-width:1240px) {
-                gap: 20px;
-            }
+                @media (max-width: 1240px) {
+                    gap: 20px;
+                }
 
-            @media (max-width: 1024px) {
-                p {
-                    line-height: 20px;
+                @media (max-width: 1024px) {
+                    li {
+                        line-height: 20px;
+                        font-size: 1rem;
+                    }
                 }
             }
 
-            p {
+            li {
+                position: relative;
+                padding-left: 30px;
                 font-size: 1.125rem;
                 font-weight: 500;
+                list-style: none;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 3px;
+                    width: 20px;
+                    height: 20px;
+                    background-size: cover;
+
+                }
             }
+
+                .card__text-icon--one::before {
+                    background-image: url('../icons/list-icon--one.svg');
+                }
+
+                .card__text-icon--two::before {
+                    background-image: url('../icons/list-icon--one.svg');
+                }
+
+                .card__text-icon--three::before {
+                    background-image: url('../icons/list-icon--one.svg');
+                }
         }
 
         &__skills {
@@ -831,7 +860,7 @@
         &-logo {
             max-width: 300px;
             width: 100%;
-            height: 64px;
+            height: 20px;
 
             @media (max-width:640px) {
                 max-width: 135px;
