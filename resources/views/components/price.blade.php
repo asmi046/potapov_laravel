@@ -23,7 +23,7 @@
 
                 <div class="price__item">
                     <div class="price__item-title">16 000 руб.</div>
-                    <p class="price__item-text">Тяжелый дым<br> 2 зала</p>
+                    <p class="price__item-text">Тяжелый дым<br> 2 залпа</p>
                 </div>
             </div>
         </div>
