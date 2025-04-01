@@ -353,11 +353,11 @@
                 }
 
                 .card__text-icon--two::before {
-                    background-image: url('../icons/list-icon--one.svg');
+                    background-image: url('../icons/dj.svg');
                 }
 
                 .card__text-icon--three::before {
-                    background-image: url('../icons/list-icon--one.svg');
+                    background-image: url('../icons/event.svg');
                 }
         }
 
@@ -571,6 +571,7 @@
             }
 
             &-detail {
+                margin-top: auto;
                 a {
                     color: $main_color;
                     text-decoration: underline;

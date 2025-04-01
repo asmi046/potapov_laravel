@@ -31,7 +31,7 @@
                     <swiper-slide>
                         <a data-fslightbox="page-galery" data-autoplay href="{{ asset($item['src']) }}"
                             class="video-content">
-                            <video style="display: none" src="{{ asset($item['src']) }}"
+                            <video playsinline style="display: none" src="{{ asset($item['src']) }}"
                                 poster="{{ asset($item['promo']) }}"></video>
                             <img src="{{ asset($item['promo']) }}" alt="Видео с Александром Потаповым">
                             <div class="play-icon">
