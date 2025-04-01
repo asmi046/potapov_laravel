@@ -543,7 +543,8 @@
 
             &-detail {
                 a {
-                    color: $gray_color;
+                    color: $main_color;
+                    text-decoration: underline;
                     font-size: 0.75rem;
                     display: inline-block;
                     letter-spacing: 0.3px;

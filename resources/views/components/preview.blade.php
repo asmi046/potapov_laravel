@@ -66,9 +66,9 @@
                             <div class="skills__group-values">
                                 <p>Опыт</p>
                                 <div>
-                                    <img src="{{ asset('icons/skills-icon-exp.svg') }}"
+                                    <img src="{{ asset('icons/skills-icon-charisma.svg') }}"
                                         alt="Иконка шкалы максимального опыта">
-                                    <span>89%</span>
+                                    <span>95%</span>
                                 </div>
                             </div>
                             <div class="skills__group-values">
