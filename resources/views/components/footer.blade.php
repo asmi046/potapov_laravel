@@ -1,9 +1,8 @@
         <div class="container">
             <div class="footer__info">
-                <a href="{{ route('home') }}">
-                    <img src="{{ asset('icons/footer-stars.svg') }}" class="footer__info-logo"
+                <img src="{{ asset('icons/footer-stars.svg') }}" class="footer__info-logo"
                         alt="Логотип Александра Потапова">
-                </a>
+
                 <p class="footer__info-master">АЛЕКСАНДР ПОТАПОВ</p>
                 <p class="footer__info-text">Тот самый ведущий...</p>
                 <p class="footer__info-phone"><a
