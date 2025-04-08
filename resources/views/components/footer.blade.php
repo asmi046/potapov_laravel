@@ -2,7 +2,7 @@
             <div class="footer__info">
                 <img src="{{ asset('icons/footer-stars.svg') }}" class="footer__info-logo"
                         alt="Логотип Александра Потапова">
-
+                <p class="stars_summary">Рейтинг в Яндекс <strong>на основе более 50 оценок</strong></p>
                 <p class="footer__info-master">АЛЕКСАНДР ПОТАПОВ</p>
                 <p class="footer__info-text">Тот самый ведущий...</p>
                 <p class="footer__info-phone"><a
