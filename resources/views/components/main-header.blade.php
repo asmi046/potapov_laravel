@@ -9,13 +9,13 @@
             </a>
             <div class="header__topbar-contact">
                 <div class="header__topbar-social">
-                    <a href="{{ config('lend_data.header.ws_lnk') }}">
+                    <a onclick="ym(53850847,'reachGoal','clSocial')" href="{{ config('lend_data.header.ws_lnk') }}">
                         <img src="{{ asset('icons/whatsapp-icon.svg') }}" alt="Иконка мессенджера WhatsApp">
                     </a>
-                    <a href="{{ config('lend_data.header.tg_lnk') }}">
+                    <a onclick="ym(53850847,'reachGoal','clSocial')" href="{{ config('lend_data.header.tg_lnk') }}">
                         <img src="{{ asset('icons/tg-icon.svg') }}" alt="Иконка мессенджера Telegram">
                     </a>
-                    <a href="{{ config('lend_data.header.vk_lnk') }}">
+                    <a onclick="ym(53850847,'reachGoal','clSocial')" href="{{ config('lend_data.header.vk_lnk') }}">
                         <img src="{{ asset('icons/vk-icon.svg') }}" alt="Иконка социальной сети Вконтакте">
                     </a>
                 </div>
