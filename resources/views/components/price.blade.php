@@ -2,7 +2,7 @@
             <h2 class="section-title">ПРАЙС 2025 </h2>
             <div class="price-wrapper">
                 <div class="price__item">
-                    <div class="price__item-title">55 000 руб.</div>
+                    <div class="price__item-title">60 000 руб.</div>
                     <p class="price__item-text">Услуги ведущего + комплект<br> digital игр</p>
                 </div>
 
@@ -26,5 +26,6 @@
                     <p class="price__item-text">Тяжелый дым<br> 2 залпа</p>
                 </div>
             </div>
-            <p class="snoska">* для камерных свадеб и небольших юбилеев (до 35 человек) стоимость рассчитывается индивидуально</p>
+            <p class="snoska">* для камерных свадеб и небольших юбилеев (до 35 человек) стоимость рассчитывается
+                индивидуально</p>
         </div>
