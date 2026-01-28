@@ -3,7 +3,7 @@
             <div class="price-wrapper">
                 <div class="price__item">
                     <div class="price__item-title">60 000 руб.</div>
-                    <p class="price__item-text">Услуги ведущего + комплект<br> digital игр</p>
+                    <p class="price__item-text">Услуги ведущего <br>+ комплект digital игр</p>
                 </div>
 
                 <div class="price__item">
