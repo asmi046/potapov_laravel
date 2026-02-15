@@ -29,8 +29,7 @@
             <swiper-container id="video_swiper">
                 @foreach (config('lend_data.video') as $item)
                     <swiper-slide>
-                        <a data-fslightbox="page-galery" data-autoplay href="{{ asset($item['src']) }}"
-                            class="video-content">
+                        <a data-fslightbox="page-galery" data-autoplay href="{{ asset($item['src']) }}" class="video-content">
                             <video playsinline style="display: none" src="{{ asset($item['src']) }}"
                                 poster="{{ asset($item['promo']) }}"></video>
                             <img src="{{ asset($item['promo']) }}" alt="Видео с Александром Потаповым">
@@ -59,8 +58,9 @@
 
     <section class="promo">
         <div class="container">
-            <h2 class="section-title">PROMO 2025</h2>
-            <video style="border-radius: 20px;" autoplay loop muted controls src="{{ asset('/video/promo_2023.mp4') }}"  ></video>
+            <h2 class="section-title">PROMO 2026</h2>
+            <video style="border-radius: 20px;" autoplay loop muted controls
+                src="{{ asset('/video/promo_2023.mp4') }}"></video>
         </div>
     </section>
 

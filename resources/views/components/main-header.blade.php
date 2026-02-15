@@ -19,12 +19,15 @@
                         <img src="{{ asset('icons/vk-icon.svg') }}" alt="Иконка социальной сети Вконтакте">
                     </a>
                 </div>
-                <a class="header__topbar-phone" href="tel:+7{{ phone_format(config('lend_data.header.phone')) }}">{{ config('lend_data.header.phone') }}</a>
+                <a class="header__topbar-phone"
+                    href="tel:+7{{ phone_format(config('lend_data.header.phone')) }}">{{ config('lend_data.header.phone') }}</a>
             </div>
         </div>
         <div class="header__bottombar">
             <h1>АЛЕКСАНДР ПОТАПОВ</h1>
-            <p>Выпускник школы «Первого канала». Экс-ведущий и репортёр «Вестей». Работал на одной сцене с такими звёздами, как: L’One, группа “Каста”, Бурито, Тина Кузнецова, “Ottawan”, ”Волга-Волга”, Ильёй Соболевым, Иваном Абрамовым, Нурланом Сабуровым и тд.</p>
+            <p>Выпускник школы «Первого канала». Телеведущий и диктор на телеканале Россия 1, ведущий программы «Вести».
+                Работал на одной сцене с такими звёздами, как: L’One, группа “Каста”, Бурито, Тина Кузнецова, “Ottawan”,
+                ”Волга-Волга”, Ильёй Соболевым, Иваном Абрамовым, Нурланом Сабуровым и тд.</p>
             <a class="header__bottombar-btn yakor" href="#preview">Давайте знакомиться</a>
         </div>
 

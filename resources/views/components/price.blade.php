@@ -1,5 +1,5 @@
         <div class="container">
-            <h2 class="section-title">ПРАЙС 2025 </h2>
+            <h2 class="section-title">ПРАЙС 2026 </h2>
             <div class="price-wrapper">
                 <div class="price__item">
                     <div class="price__item-title">60 000 руб.</div>
