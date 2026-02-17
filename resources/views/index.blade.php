@@ -60,7 +60,7 @@
         <div class="container">
             <h2 class="section-title">PROMO 2026</h2>
             <video style="border-radius: 20px;" autoplay loop muted controls
-                src="{{ asset('/video/promo_2023.mp4') }}"></video>
+                src="{{ asset('/video/promo_2026.mp4') }}"></video>
         </div>
     </section>
 

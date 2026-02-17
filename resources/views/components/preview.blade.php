@@ -18,8 +18,8 @@
 
 
                         <div class="preview__block-img__social">
-                            <a href="{{ config('lend_data.header.ws_lnk') }}">
-                                <img src="{{ asset('icons/whatsapp-with-photo.svg') }}" alt="Написать в WhatsApp">
+                            <a href="https://max.ru/u/f9LHodD0cOLLrUIoYsnlgwycVyYR0OWgfQVSlFfqP-34-sYdK0vMq40pVvE">
+                                <img src="{{ asset('icons/max-with-photo.svg') }}" alt="Написать в Max">
                             </a>
                             <a href="{{ config('lend_data.header.tg_lnk') }}">
                                 <img src="{{ asset('icons/tg-with-photo.svg') }}" alt="Написать в Telegram">
