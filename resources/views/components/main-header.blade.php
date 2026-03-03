@@ -13,9 +13,9 @@
                         href="https://max.ru/u/f9LHodD0cOLLrUIoYsnlgwycVyYR0OWgfQVSlFfqP-34-sYdK0vMq40pVvE">
                         <img src="{{ asset('icons/max-icon.svg') }}" alt="Иконка мессенджера WhatsApp">
                     </a>
-                    <a onclick="ym(53850847,'reachGoal','clSocial')" href="{{ config('lend_data.header.tg_lnk') }}">
+                    {{-- <a onclick="ym(53850847,'reachGoal','clSocial')" href="{{ config('lend_data.header.tg_lnk') }}">
                         <img src="{{ asset('icons/tg-icon.svg') }}" alt="Иконка мессенджера Telegram">
-                    </a>
+                    </a> --}}
                     <a onclick="ym(53850847,'reachGoal','clSocial')" href="{{ config('lend_data.header.vk_lnk') }}">
                         <img src="{{ asset('icons/vk-icon.svg') }}" alt="Иконка социальной сети Вконтакте">
                     </a>
@@ -26,9 +26,9 @@
         </div>
         <div class="header__bottombar">
             <h1>АЛЕКСАНДР ПОТАПОВ</h1>
-            <p>Выпускник школы «Первого канала». Телеведущий и диктор на телеканале Россия 1, ведущий программы «Вести».
-                Работал на одной сцене с такими звёздами, как: L’One, группа “Каста”, Бурито, Тина Кузнецова, “Ottawan”,
-                ”Волга-Волга”, Ильёй Соболевым, Иваном Абрамовым, Нурланом Сабуровым и тд.</p>
+            <p>Работал на одной сцене и представлял популярных исполнителей и хедлайнеров: L’One (Леван Горозия),
+                Burito, Тина Кузнецова, группа SEREBRO, легендарные Ottawan (Франция), ВИА «Волга-Волга», а также Илья
+                Соболев, Иван Абрамов и другие представители comedy.</p>
             <a class="header__bottombar-btn yakor" href="#preview">Давайте знакомиться</a>
         </div>
 
