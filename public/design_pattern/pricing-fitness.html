@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pricing — Fitness</title>
+<style>
+  :root {
+    --bg:          #F9FAFB;
+    --card-bg:     #FFFFFF;
+    --border:      #E5E7EB;
+    --accent:      #FF4D4D;
+    --accent-dark: #E63E3E;
+    --green:       #10B981;
+    --grey-x:      #9CA3AF;
+    --text:        #1F2937;
+    --text-muted:  #6B7280;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 48px 20px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ---------- Pricing grid ---------- */
+  .pricing {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    align-items: stretch;
+    width: 100%;
+    max-width: 1080px;
+  }
+
+  .card {
+    position: relative;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 28px 26px 30px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.10), 0 2px 4px -1px rgba(0,0,0,0.06);
+    transition: transform .25s ease, box-shadow .25s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-4px);
+  }
+
+  .card--featured {
+    border: 2px solid var(--accent);
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.10), 0 4px 6px -2px rgba(0,0,0,0.05);
+  }
+
+  /* ---------- Badge ---------- */
+  .badge {
+    position: absolute;
+    top: -13px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--accent);
+    color: #FFFFFF;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 6px 16px;
+    border-radius: 999px;
+    white-space: nowrap;
+    box-shadow: 0 4px 10px rgba(255,77,77,0.35);
+  }
+
+  /* ---------- Image area (placeholder) ---------- */
+  .card__img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 12px;
+    margin-bottom: 18px;
+    background:
+      linear-gradient(135deg, rgba(255,77,77,0.12), rgba(16,185,129,0.10)),
+      repeating-linear-gradient(45deg, #F3F4F6 0 12px, #E5E7EB 12px 24px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  /* ---------- Card body ---------- */
+  .card__name {
+    font-size: 22px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin-bottom: 10px;
+  }
+
+  .price {
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+    margin-bottom: 20px;
+  }
+
+  .price__value {
+    font-size: 38px;
+    font-weight: 800;
+    line-height: 1;
+    color: var(--text);
+    letter-spacing: -0.03em;
+  }
+
+  .price__unit {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text-muted);
+  }
+
+  /* ---------- Features ---------- */
+  .features {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 26px;
+    flex: 1;
+  }
+
+  .features li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: var(--text);
+    line-height: 1.4;
+  }
+
+  .features li.is-off { color: var(--text-muted); }
+
+  .ico {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+  }
+
+  .ico--ok  { background: var(--green); }
+  .ico--off { background: var(--grey-x); }
+
+  .ico svg { width: 11px; height: 11px; }
+
+  /* ---------- Button ---------- */
+  .card__btn {
+    width: 100%;
+    padding: 13px 16px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: inherit;
+    transition: all .2s ease;
+    border: 1px solid var(--border);
+    background: var(--card-bg);
+    color: var(--text);
+  }
+
+  .card__btn:hover { background: #F9FAFB; }
+
+  .card--featured .card__btn {
+    background: var(--accent);
+    color: #FFFFFF;
+    border: none;
+    box-shadow: 0 4px 12px rgba(255,77,77,0.35);
+  }
+
+  .card--featured .card__btn:hover { background: var(--accent-dark); }
+
+  /* ---------- Responsive ---------- */
+  @media (max-width: 900px) {
+    .pricing { grid-template-columns: 1fr; max-width: 400px; margin: 0 auto; }
+  }
+</style>
+</head>
+<body>
+
+  <div class="pricing">
+
+    <!-- ============ Card 1: Build Foundation ============ -->
+    <article class="card">
+      <div class="card__img">photo</div>
+
+      <h2 class="card__name">Build Foundation</h2>
+
+      <div class="price">
+        <span class="price__value">$49</span>
+        <span class="price__unit">/mo</span>
+      </div>
+
+      <ul class="features">
+        <li><span class="ico ico--ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>3 Custom Workouts per week</li>
+        <li><span class="ico ico--ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>Standard Nutrition Guide</li>
+        <li><span class="ico ico--ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>Community Group Access</li>
+        <li class="is-off"><span class="ico ico--off"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></span>1-on-1 Weekly Check-ins</li>
+      </ul>
+
+      <button class="card__btn">Start Free Trial</button>
+    </article>
+
+    <!-- ============ Card 2: Pro Shred (featured) ============ -->
+    <article class="card card--featured">
+      <span class="badge">Most Popular</span>
+      <div class="card__img">photo</div>
+
+      <h2 class="card__name">Pro Shred</h2>
+
+      <div class="price">
+        <span class="price__value">$89</span>
+        <span class="price__unit">/mo</span>
+      </div>
+
+      <ul class="features">
+        <li><span class="ico ico--ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>5 Custom Workouts per week</li>
+        <li><span class="ico ico--ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>Personalized Macro &amp; Meal Plan</li>
+        <li><span class="ico ico--ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>1-on-1 Weekly Video Check-ins</li>
+        <li><span class="ico ico--ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>24/7 Priority WhatsApp Support</li>
+      </ul>
+
+      <button class="card__btn">Join the Elite</button>
+    </article>
+
+    <!-- ============ Card 3: Elite Performance ============ -->
+    <article class="card">
+      <div class="card__img">photo</div>
+
+      <h2 class="card__name">Elite Performance</h2>
+
+      <div class="price">
+        <span class="price__value">$149</span>
+        <span class="price__unit">/mo</span>
+      </div>
+
+      <ul class="features">
+        <li><span class="ico ico--ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>Daily Dynamic Training</li>
+        <li><span class="ico ico--ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>Advanced Supplementation Guide</li>
+        <li><span class="ico ico--ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>Video Form Correction Analysis</li>
+        <li><span class="ico ico--ok"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg></span>Direct Access to Head Coach</li>
+      </ul>
+
+      <button class="card__btn">Go All In</button>
+    </article>
+
+  </div>
+
+</body>
+</html>

@@ -49,7 +49,10 @@
     </section>
 
     <section class="price">
-        <x-price></x-price>
+        <div class="container">
+            <h2 class="section-title">ПРАЙС 2026</h2>
+            <x-price></x-price>
+        </div>
     </section>
 
     <section class="photograph">
