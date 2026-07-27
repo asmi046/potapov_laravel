@@ -13,6 +13,21 @@
                                     <img src="{{ asset('images/profile-with-didjey.webp') }}"
                                         alt="Фото-карточка Александра Потапова">
                                 </swiper-slide>
+
+                                <swiper-slide>
+                                    <img src="{{ asset('images/profile-photo-rew.webp') }}"
+                                        alt="Отзыв о работе ведущего Александра Потапова">
+                                </swiper-slide>
+
+                                <swiper-slide>
+                                    <img src="{{ asset('images/profile-photo-zal.webp') }}"
+                                        alt="Александр Потапов на сцене в зале">
+                                </swiper-slide>
+
+                                <swiper-slide>
+                                    <img src="{{ asset('images/profile-photo-para.webp') }}"
+                                        alt="Александр Потапов с довольными клиентами">
+                                </swiper-slide>
                             </swiper-container>
                         </div>
 

@@ -50,8 +50,12 @@
 
     <section class="price">
         <div class="container">
-            <h2 class="section-title">ПРАЙС 2026</h2>
+            <h2 class="section-title">ПРАЙС 2026 - 2027</h2>
             <x-price></x-price>
+            <br>
+            <p style="text-align: center;" class="snoska">* технический райдер обсуждается и составляется отдельной сметой в
+                зависимости от площадки и
+                количества гостей мероприятия</p>
         </div>
     </section>
 

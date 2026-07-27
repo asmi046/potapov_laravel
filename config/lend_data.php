@@ -18,20 +18,30 @@ return [
 
 
     "video" => [
-        [
-            'src' => 'video/animal-show-vertical.mp4',
-            'promo' => '/images/animal-show-prev.webp',
-            'text' => "<p>- Змей искуситель!?</p><p>- No!</p>",
+        // [
+        //     'src' => 'video/animal-show-vertical.mp4',
+        //     'promo' => '/images/animal-show-prev.webp',
+        //     'text' => "<p>- Змей искуситель!?</p><p>- No!</p>",
+        // ],
+        [ // ---------
+            'src' => 'video/svidanie.mp4',
+            'promo' => '/images/svidanie-prev.webp',
+            'text' => "<p>Красивая</p><p>встреча</p>",
         ],
         [
             'src' => 'video/reels-league.mp4',
             'promo' => '/images/90e-prev.webp',
             'text' => "<p>Аля 90-е!</p><p></p>",
         ],
+        // [
+        //     'src' => 'video/norder-potapov-reels.mp4',
+        //     'promo' => '/images/happy-new-year-prev.webp',
+        //     'text' => "<p>Новогоднее</p><p>Приключение 2025</p>",
+        // ],
         [
-            'src' => 'video/norder-potapov-reels.mp4',
-            'promo' => '/images/happy-new-year-prev.webp',
-            'text' => "<p>Новогоднее</p><p>Приключение 2025</p>",
+            'src' => 'video/center.mp4',
+            'promo' => '/images/stol-prev.webp',
+            'text' => "<p>Красивая</p><p>свадьба</p>",
         ],
         [
             'src' => 'video/reels-nzc-pot-clip1.mp4',
@@ -43,11 +53,16 @@ return [
             'promo' => '/images/potappini-prev.webp',
             'text' => "<p>Alexandro</p><p>Potapinni!</p>",
         ],
-        [
-            'src' => 'video/promo_2023.mp4',
-            'promo' => '/images/promo-prev.webp',
-            'text' => "<p>PROMO</p><p>2025</p>",
+        [ // ---------
+            'src' => 'video/priroda.mp4',
+            'promo' => '/images/priroda-prev.webp',
+            'text' => "<p>Выездная</p><p>церимония</p>",
         ],
+        // [
+        //     'src' => 'video/promo_2023.mp4',
+        //     'promo' => '/images/promo-prev.webp',
+        //     'text' => "<p>PROMO</p><p>2025</p>",
+        // ],
     ],
     // Отзывы
     "rev" => [
