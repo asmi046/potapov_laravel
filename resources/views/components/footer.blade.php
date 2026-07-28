@@ -4,7 +4,7 @@
                     alt="Логотип Александра Потапова">
                 <p class="stars_summary">Рейтинг в Яндекс <strong>на основе более 50 оценок</strong></p>
                 <p class="footer__info-master">АЛЕКСАНДР ПОТАПОВ</p>
-                <p class="footer__info-text">Тот самый ведущий...</p>
+                <p class="footer__info-text">Бутик-подход к главным событиям в вашей жизни</p>
                 <p class="footer__info-phone"><a
                         href="tel:+7{{ phone_format(config('lend_data.header.phone')) }}">{{ config('lend_data.header.phone') }}</a>
                 </p>

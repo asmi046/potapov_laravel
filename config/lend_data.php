@@ -26,8 +26,19 @@ return [
         [ // ---------
             'src' => 'video/svidanie.mp4',
             'promo' => '/images/svidanie-prev.webp',
-            'text' => "<p>Красивая</p><p>встреча</p>",
+            'text' => "<p>Как я веду</p><p>регистрацию!</p>",
         ],
+        [ // ---------
+            'src' => 'video/priroda.mp4',
+            'promo' => '/images/priroda-prev.webp',
+            'text' => "<p>Свадьба под</p><p>открытым небом!</p>",
+        ],
+        [
+            'src' => 'video/center.mp4',
+            'promo' => '/images/stol-prev.webp',
+            'text' => "<p>Атмосфера</p><p>красивой свадьбы</p>",
+        ],
+
         [
             'src' => 'video/reels-league.mp4',
             'promo' => '/images/90e-prev.webp',
@@ -38,11 +49,7 @@ return [
         //     'promo' => '/images/happy-new-year-prev.webp',
         //     'text' => "<p>Новогоднее</p><p>Приключение 2025</p>",
         // ],
-        [
-            'src' => 'video/center.mp4',
-            'promo' => '/images/stol-prev.webp',
-            'text' => "<p>Красивая</p><p>свадьба</p>",
-        ],
+
         [
             'src' => 'video/reels-nzc-pot-clip1.mp4',
             'promo' => '/images/disco-prev.webp',
@@ -53,11 +60,7 @@ return [
             'promo' => '/images/potappini-prev.webp',
             'text' => "<p>Alexandro</p><p>Potapinni!</p>",
         ],
-        [ // ---------
-            'src' => 'video/priroda.mp4',
-            'promo' => '/images/priroda-prev.webp',
-            'text' => "<p>Выездная</p><p>церимония</p>",
-        ],
+
         // [
         //     'src' => 'video/promo_2023.mp4',
         //     'promo' => '/images/promo-prev.webp',
