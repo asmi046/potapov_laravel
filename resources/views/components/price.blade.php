@@ -4,6 +4,7 @@
             'image' => asset('images/tarif/tarif_1.webp'),
             'name' => 'Стандартный',
             'price' => '100 000 ₽',
+            'price_text' => 'пакетное предложение',
             'featured' => false,
             'features' => [
                 'Ведение свадьбы с 17 до 22.',
@@ -17,6 +18,7 @@
             'image' => asset('images/tarif/tarif_2.webp'),
             'name' => 'Комфорт',
             'price' => '130 000 ₽',
+            'price_text' => 'церемония под ключ',
             'featured' => true,
             'features' => [
                 'Ведение свадьбы с 15 до 23 часов: welcome, церемония и банкет.',
@@ -30,6 +32,7 @@
             'image' => asset('images/tarif/tarif_3.webp'),
             'name' => 'VIP',
             'price' => '160 000 ₽',
+            'price_text' => 'пакетное услсг + команда',
             'featured' => false,
             'features' => [
                 'Ведение свадьбы с 15 до 23 часов: welcome, церемония и банкет.',
@@ -60,7 +63,7 @@
 
             <div class="price">
                 <span class="price__value">{{ $package['price'] }}</span>
-                <span class="price__unit">/под ключ</span>
+                <span class="price__unit">/{{ $package['price_text'] }}</span>
             </div>
 
             <ul class="features">
