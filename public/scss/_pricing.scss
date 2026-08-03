@@ -6,17 +6,63 @@ $bronze-3: #e0b65c;
 $bronze-4: #f4d98a;
 $bronze-5: #a9702f;
 
-$bronze-shimmer: linear-gradient(120deg, $bronze-1, $bronze-2, $bronze-4, $bronze-3, $bronze-5, $bronze-2);
+$ruby-1: #4a0d12;
+$ruby-2: #8b0000;
+$ruby-3: #c41e3a;
+$ruby-4: #b22222;
+$ruby-5: #6d1f1f;
 
-@keyframes bronze-shimmer {
-    0% {
-        background-position: 0% 50%;
+$bronze-shimmer: linear-gradient(120deg,
+    $bronze-1,
+    $bronze-2,
+    $bronze-4,
+    $bronze-3,
+    $bronze-5,
+    $bronze-2
+);
+$ruby-shimmer: linear-gradient(120deg,
+    $ruby-1,
+    $ruby-2,
+    $ruby-3,
+    $ruby-4,
+    $ruby-5,
+    $ruby-2
+);
+
+@keyframes shimmer-pan {
+    0%   { background-position: 0% 50%; }
+    50%  { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@mixin themed-card($shimmer, $glow) {
+    border: 2px solid transparent;
+    background:
+        linear-gradient(#fff, #fff) padding-box,
+        $shimmer border-box;
+    background-size: 100% 100%, 300% 300%;
+    animation: shimmer-pan 6s ease infinite;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.10),
+                0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+    .badge {
+        background: $shimmer;
+        background-size: 300% 300%;
+        animation: shimmer-pan 6s ease infinite;
+        box-shadow: 0 4px 10px $glow;
     }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
+
+    .card__btn {
+        background: $shimmer;
+        background-size: 300% 300%;
+        animation: shimmer-pan 6s ease infinite;
+        color: #fff;
+        border: none;
+        box-shadow: 0 4px 12px $glow;
+
+        &:hover {
+            filter: brightness(1.08);
+        }
     }
 }
 
@@ -32,47 +78,25 @@ $bronze-shimmer: linear-gradient(120deg, $bronze-1, $bronze-2, $bronze-4, $bronz
     .card {
         position: relative;
         background: #fff;
-        border: 1px solid #e5e7eb;
+        border: 1px solid #E5E7EB;
         border-radius: 16px;
         padding: 28px 26px 30px;
         display: flex;
         flex-direction: column;
-        box-shadow:
-            0 4px 6px -1px rgba(0, 0, 0, 0.1),
-            0 2px 4px -1px rgba(0, 0, 0, 0.06);
-        transition:
-            transform 0.25s ease,
-            box-shadow 0.25s ease;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.10),
+                    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        transition: transform .25s ease, box-shadow .25s ease;
 
         &:hover {
             transform: translateY(-4px);
         }
 
-        &--featured {
-            border: 2px solid transparent;
-            background:
-                linear-gradient(#fff, #fff) padding-box,
-                $bronze-shimmer border-box;
-            background-size:
-                100% 100%,
-                300% 300%;
-            animation: bronze-shimmer 6s ease infinite;
-            box-shadow:
-                0 10px 15px -3px rgba(0, 0, 0, 0.1),
-                0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        &--bronze {
+            @include themed-card($bronze-shimmer, rgba(205, 127, 50, 0.45));
+        }
 
-            .card__btn {
-                background: $bronze-shimmer;
-                background-size: 300% 300%;
-                animation: bronze-shimmer 6s ease infinite;
-                color: #fff;
-                border: none;
-                box-shadow: 0 4px 12px rgba(205, 127, 50, 0.45);
-
-                &:hover {
-                    filter: brightness(1.08);
-                }
-            }
+        &--ruby {
+            @include themed-card($ruby-shimmer, rgba(139, 0, 0, 0.45));
         }
     }
 
@@ -83,7 +107,7 @@ $bronze-shimmer: linear-gradient(120deg, $bronze-1, $bronze-2, $bronze-4, $bronz
         transform: translateX(-50%);
         background: $bronze-shimmer;
         background-size: 300% 300%;
-        animation: bronze-shimmer 6s ease infinite;
+        animation: shimmer-pan 6s ease infinite;
         color: #fff;
         font-size: 11px;
         font-weight: 700;
@@ -92,7 +116,7 @@ $bronze-shimmer: linear-gradient(120deg, $bronze-1, $bronze-2, $bronze-4, $bronz
         padding: 6px 16px;
         border-radius: 999px;
         white-space: nowrap;
-        box-shadow: 0 4px 10px rgba(205, 127, 50, 0.45);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
     }
 
     .card__img {
@@ -112,8 +136,8 @@ $bronze-shimmer: linear-gradient(120deg, $bronze-1, $bronze-2, $bronze-4, $bronz
     }
 
     .card__name {
-        font-size: 28px;
-        font-weight: 500 !important;
+        font-size: 22px;
+        font-weight: 800;
         letter-spacing: -0.02em;
         margin-bottom: 10px;
     }
@@ -125,17 +149,17 @@ $bronze-shimmer: linear-gradient(120deg, $bronze-1, $bronze-2, $bronze-4, $bronz
         margin-bottom: 20px;
 
         &__value {
-            font-size: 22px;
+            font-size: 38px;
             font-weight: 800;
             line-height: 1;
-            color: $main_color;
+            color: #1F2937;
             letter-spacing: -0.03em;
         }
 
         &__unit {
-            font-size: 11px;
+            font-size: 15px;
             font-weight: 600;
-            color: #6b7280;
+            color: #6B7280;
         }
     }
 
@@ -152,11 +176,11 @@ $bronze-shimmer: linear-gradient(120deg, $bronze-1, $bronze-2, $bronze-4, $bronz
             align-items: center;
             gap: 10px;
             font-size: 14px;
-            color: #1f2937;
+            color: #1F2937;
             line-height: 1.4;
 
             &.is-off {
-                color: #6b7280;
+                color: #6B7280;
             }
         }
     }
@@ -172,11 +196,11 @@ $bronze-shimmer: linear-gradient(120deg, $bronze-1, $bronze-2, $bronze-4, $bronz
         color: #fff;
 
         &--ok {
-            background: $main_color;
+            background: #10B981;
         }
 
         &--off {
-            background: #9ca3af;
+            background: #9CA3AF;
         }
 
         svg {
@@ -195,13 +219,13 @@ $bronze-shimmer: linear-gradient(120deg, $bronze-1, $bronze-2, $bronze-4, $bronz
         text-align: center;
         text-decoration: none;
         cursor: pointer;
-        transition: all 0.2s ease;
-        border: 1px solid #e5e7eb;
+        transition: all .2s ease;
+        border: 1px solid #E5E7EB;
         background: #fff;
-        color: #1f2937;
+        color: #1F2937;
 
         &:hover {
-            background: #f9fafb;
+            background: #F9FAFB;
         }
     }
 
