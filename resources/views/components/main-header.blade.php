@@ -11,7 +11,7 @@
                 <div class="header__topbar-social">
                     <a onclick="ym(53850847,'reachGoal','clSocial')"
                         href="https://max.ru/u/f9LHodD0cOLLrUIoYsnlgwycVyYR0OWgfQVSlFfqP-34-sYdK0vMq40pVvE">
-                        <img src="{{ asset('icons/max-icon.svg') }}" alt="Иконка мессенджера WhatsApp">
+                        <img src="{{ asset('icons/max-icon.svg') }}" alt="Иконка мессенджера Max">
                     </a>
                     {{-- <a onclick="ym(53850847,'reachGoal','clSocial')" href="{{ config('lend_data.header.tg_lnk') }}">
                         <img src="{{ asset('icons/tg-icon.svg') }}" alt="Иконка мессенджера Telegram">

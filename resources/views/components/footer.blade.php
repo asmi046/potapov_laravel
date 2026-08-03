@@ -9,9 +9,13 @@
                         href="tel:+7{{ phone_format(config('lend_data.header.phone')) }}">{{ config('lend_data.header.phone') }}</a>
                 </p>
                 <div class="footer__info-social">
-                    <a href="{{ config('lend_data.header.ws_lnk') }}">
-                        <img src="{{ asset('icons/whatsapp-icon.svg') }}" alt="Иконка мессенджера WhatsApp">
+                    <a onclick="ym(53850847,'reachGoal','clSocial')"
+                        href="https://max.ru/u/f9LHodD0cOLLrUIoYsnlgwycVyYR0OWgfQVSlFfqP-34-sYdK0vMq40pVvE">
+                        <img src="{{ asset('icons/max-icon.svg') }}" alt="Иконка мессенджера Max">
                     </a>
+                    {{-- <a href="{{ config('lend_data.header.ws_lnk') }}">
+                        <img src="{{ asset('icons/whatsapp-icon.svg') }}" alt="Иконка мессенджера WhatsApp">
+                    </a> --}}
                     {{-- <a href="{{ config('lend_data.header.tg_lnk') }}">
                         <img src="{{ asset('icons/tg-icon.svg') }}" alt="Иконка мессенджера Telegram">
                     </a> --}}

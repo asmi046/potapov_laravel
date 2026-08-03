@@ -32,7 +32,7 @@
             'image' => asset('images/tarif/tarif_3.webp'),
             'name' => 'VIP',
             'price' => '160 000 ₽',
-            'price_text' => 'пакетное услсг + команда',
+            'price_text' => 'комплекс + команда',
             'featured' => false,
             'features' => [
                 'Ведение свадьбы с 15 до 23 часов: welcome, церемония и банкет.',
