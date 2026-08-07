@@ -1,11 +1,12 @@
 @php
     $packages = [
         [
-            'image'    => asset('images/tarif/tarif_1.webp'),
-            'name'     => 'Стандартный',
-            'price'    => '100 000 ₽',
-            'theme'    => null,
-            'badge'    => null,
+            'image' => asset('images/tarif/tarif_1.webp'),
+            'name' => 'Стандартный',
+            'price' => '100 000 ₽',
+            'price_comment' => 'базовый звук',
+            'theme' => null,
+            'badge' => null,
             'features' => [
                 'Ведение свадьбы с 17 до 22.',
                 'Диджейское сопровождение с 16 до 23.',
@@ -15,11 +16,12 @@
             ],
         ],
         [
-            'image'    => asset('images/tarif/tarif_2.webp'),
-            'name'     => 'Комфорт',
-            'price'    => '130 000 ₽',
-            'theme'    => 'ruby',
-            'badge'    => 'Оптимально',
+            'image' => asset('images/tarif/tarif_2.webp'),
+            'name' => 'Комфорт',
+            'price' => '130 000 ₽',
+            'price_comment' => 'церимония под ключ',
+            'theme' => 'ruby',
+            'badge' => 'Оптимально',
             'features' => [
                 'Ведение свадьбы с 15 до 23 часов: welcome, церемония и банкет.',
                 'Диджейское сопровождение с 14 до 23 + вокал',
@@ -29,17 +31,21 @@
             ],
         ],
         [
-            'image'    => asset('images/tarif/tarif_3.webp'),
-            'name'     => 'VIP',
-            'price'    => '150 000 ₽',
-            'theme'    => 'bronze',
-            'badge'    => 'Отлично',
+            'image' => asset('images/tarif/tarif_3.webp'),
+            'name' => 'VIP',
+            'price' => '160 000 ₽',
+            'price_comment' => 'комплекс + команда',
+            'theme' => 'bronze',
+            'badge' => 'Отлично',
             'features' => [
                 'Ведение свадьбы с 15 до 23 часов: welcome, церемония и банкет.',
                 'Диджейское сопровождение с 14 до 23 + вокал',
                 'Первоклассный гитарист на welcome',
                 'Живые встречи и зумы по запросу',
                 'Совместный чат для подготовки',
+                'Съемка весёлого интервью с гостями',
+                'Вечерний просмотр клипа',
+                'Гитарист',
             ],
         ],
     ];
@@ -60,14 +66,16 @@
 
             <div class="price">
                 <span class="price__value">{{ $package['price'] }}</span>
-                <span class="price__unit">/под ключ</span>
+                <span class="price__unit">/{{ $package['price_comment'] }}</span>
             </div>
 
             <ul class="features">
                 @foreach ($package['features'] as $feature)
                     <li>
                         <span class="ico ico--ok">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg>
                         </span>
                         {{ $feature }}
                     </li>
