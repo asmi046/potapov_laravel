@@ -12,27 +12,19 @@ $ruby-3: #e63946;
 $ruby-4: #d62828;
 $ruby-5: #b01e28;
 
-$bronze-shimmer: linear-gradient(120deg,
-    $bronze-1,
-    $bronze-2,
-    $bronze-4,
-    $bronze-3,
-    $bronze-5,
-    $bronze-2
-);
-$ruby-shimmer: linear-gradient(120deg,
-    $ruby-1,
-    $ruby-2,
-    $ruby-3,
-    $ruby-4,
-    $ruby-5,
-    $ruby-2
-);
+$bronze-shimmer: linear-gradient(120deg, $bronze-1, $bronze-2, $bronze-4, $bronze-3, $bronze-5, $bronze-2);
+$ruby-shimmer: linear-gradient(120deg, $ruby-1, $ruby-2, $ruby-3, $ruby-4, $ruby-5, $ruby-2);
 
 @keyframes shimmer-pan {
-    0%   { background-position: 0% 50%; }
-    50%  { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 @mixin themed-card($shimmer, $glow) {
@@ -40,10 +32,13 @@ $ruby-shimmer: linear-gradient(120deg,
     background:
         linear-gradient(#fff, #fff) padding-box,
         $shimmer border-box;
-    background-size: 100% 100%, 300% 300%;
+    background-size:
+        100% 100%,
+        300% 300%;
     animation: shimmer-pan 6s ease infinite;
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.10),
-                0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    box-shadow:
+        0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -2px rgba(0, 0, 0, 0.05);
 
     .badge {
         background: $shimmer;
@@ -78,14 +73,17 @@ $ruby-shimmer: linear-gradient(120deg,
     .card {
         position: relative;
         background: #fff;
-        border: 1px solid #E5E7EB;
+        border: 1px solid #e5e7eb;
         border-radius: 16px;
         padding: 28px 26px 30px;
         display: flex;
         flex-direction: column;
-        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.10),
-                    0 2px 4px -1px rgba(0, 0, 0, 0.06);
-        transition: transform .25s ease, box-shadow .25s ease;
+        box-shadow:
+            0 4px 6px -1px rgba(0, 0, 0, 0.1),
+            0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        transition:
+            transform 0.25s ease,
+            box-shadow 0.25s ease;
 
         &:hover {
             transform: translateY(-4px);
@@ -152,14 +150,22 @@ $ruby-shimmer: linear-gradient(120deg,
             font-size: 38px;
             font-weight: 800;
             line-height: 1;
-            color: #1F2937;
+            color: #1f2937;
             letter-spacing: -0.03em;
+
+            @media (max-width: 480px) {
+                font-size: 24px;
+            }
         }
 
         &__unit {
             font-size: 15px;
             font-weight: 600;
-            color: #6B7280;
+            color: #6b7280;
+
+            @media (max-width: 480px) {
+                font-size: 12px;
+            }
         }
     }
 
@@ -176,11 +182,11 @@ $ruby-shimmer: linear-gradient(120deg,
             align-items: center;
             gap: 10px;
             font-size: 14px;
-            color: #1F2937;
+            color: #1f2937;
             line-height: 1.4;
 
             &.is-off {
-                color: #6B7280;
+                color: #6b7280;
             }
         }
     }
@@ -196,11 +202,11 @@ $ruby-shimmer: linear-gradient(120deg,
         color: #fff;
 
         &--ok {
-            background: #10B981;
+            background: #10b981;
         }
 
         &--off {
-            background: #9CA3AF;
+            background: #9ca3af;
         }
 
         svg {
@@ -219,13 +225,13 @@ $ruby-shimmer: linear-gradient(120deg,
         text-align: center;
         text-decoration: none;
         cursor: pointer;
-        transition: all .2s ease;
-        border: 1px solid #E5E7EB;
+        transition: all 0.2s ease;
+        border: 1px solid #e5e7eb;
         background: #fff;
-        color: #1F2937;
+        color: #1f2937;
 
         &:hover {
-            background: #F9FAFB;
+            background: #f9fafb;
         }
     }
 
