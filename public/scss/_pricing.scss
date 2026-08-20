@@ -147,7 +147,7 @@ $ruby-shimmer: linear-gradient(120deg, $ruby-1, $ruby-2, $ruby-3, $ruby-4, $ruby
         margin-bottom: 20px;
 
         &__value {
-            font-size: 38px;
+            font-size: 28px;
             font-weight: 800;
             line-height: 1;
             color: #1f2937;
@@ -230,9 +230,9 @@ $ruby-shimmer: linear-gradient(120deg, $ruby-1, $ruby-2, $ruby-3, $ruby-4, $ruby
         background: #fff;
         color: #1f2937;
 
-        &:hover {
-            background: #f9fafb;
-        }
+        // &:hover {
+        //     background: #f9fafb;
+        // }
     }
 
     @media (max-width: 900px) {
