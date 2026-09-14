@@ -33,6 +33,11 @@ return [
             'promo' => '/images/priroda-prev.webp',
             'text' => "<p>Свадьба под</p><p>открытым небом!</p>",
         ],
+        [ // ---------
+            'src' => 'video/corp_st_1.mp4',
+            'promo' => '/images/corp_st1.webp',
+            'text' => "<p>Конференция</p><p>Чувства</p>",
+        ],
         [
             'src' => 'video/center.mp4',
             'promo' => '/images/stol-prev.webp',
