@@ -48,6 +48,11 @@ return [
             'promo' => '/images/90e-prev.webp',
             'text' => '<p>Аля 90-е!</p><p></p>',
         ],
+        [
+            'src' => 'video/center.mp4',
+            'promo' => '/images/stol-prev.webp',
+            'text' => "<p>Атмосфера</p><p>красивой свадьбы</p>",
+        ],
         // [
         //     'src' => 'video/norder-potapov-reels.mp4',
         //     'promo' => '/images/happy-new-year-prev.webp',
