@@ -42,6 +42,11 @@ return [
             'promo' => '/images/stol-prev.webp',
             'text' => '<p>Атмосфера</p><p>красивой свадьбы</p>',
         ],
+        [ // ---------
+            'src' => 'video/corp_st_2.mp4',
+            'promo' => '/images/corp_st2.webp',
+            'text' => '<p>Конференция</p><p>Чувства</p>',
+        ],
 
         [
             'src' => 'video/reels-league.mp4',
