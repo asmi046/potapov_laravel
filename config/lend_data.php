@@ -45,7 +45,7 @@ return [
         [ // ---------
             'src' => 'video/corp_st_2.mp4',
             'promo' => '/images/corp_st2.webp',
-            'text' => '<p>Конференция</p><p>Чувства</p>',
+            'text' => '<p>Быть</p><p>Предпринимателем</p>',
         ],
 
         [
